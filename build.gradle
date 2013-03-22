@@ -1,0 +1,19 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'org.apache.hadoop:hadoop-core:1.1.1',
+            'org.codehaus.jackson:jackson-core-asl:1.8.8'
+    )
+    testCompile (
+            'junit:junit:4.11',
+            'org.mockito:mockito-all:1.9.5',
+            'org.apache.mrunit:mrunit:0.8.0-incubating'
+    )
+}
+
